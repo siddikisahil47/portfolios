@@ -1,24 +1,27 @@
 import React from 'react';
 import './footer.css'
 import { NavLink } from 'react-router-dom';
+import { FaInstagram, FaLinkedin, FaGithub, FaKaggle, FaTwitter } from "react-icons/fa";
+
+
 
 const Footer = () => {
 
     return (
-        <>
-            <hr className='separator'/>
-            <footer className='footer'>
+        <footer>
+            <hr className='separator' />
+            <div className='footer'>
                 <div className='social'>
-                    <div>insta</div>
-                    <div>linkdein</div>
-                    <div>github</div>
-                    <div>kaggle</div>
-                    <div>twitter</div>
+                    <FaInstagram className='socialIcon' />
+                    <FaLinkedin className='socialIcon' />
+                    <FaGithub className='socialIcon' />
+                    <FaKaggle className='socialIcon' />
+                    <FaTwitter className='socialIcon' />
                 </div>
                 <div>
                     <ul className='options'>
                         <li>
-                            <NavLink to='/home'>Home</NavLink>
+                            <NavLink to='/'>Home</NavLink>
                         </li>
                         <li >
                             <NavLink to='/about'>About</NavLink>
@@ -34,8 +37,8 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-            </footer>
-        </>
+            </div>
+        </footer>
     )
 }
 

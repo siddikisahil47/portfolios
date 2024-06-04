@@ -1,17 +1,19 @@
 import React from 'react'
 import './hero.css'
 import { profile } from '../../assetsfile/Image'
+import { FaInstagram, FaLinkedin, FaGithub, FaKaggle, FaTwitter } from "react-icons/fa";
+
 
 const Hero = () => {
     return (
         <section className='hero-section'>
             <div className='hero-detail'>
                 <div className='hero-social'>
-                    <div>insta</div>
-                    <div>linkdein</div>
-                    <div>github</div>
-                    <div>kaggle</div>
-                    <div>twitter</div>
+                    <FaInstagram className='socialIcon' />
+                    <FaLinkedin className='socialIcon' />
+                    <FaGithub className='socialIcon' />
+                    <FaKaggle className='socialIcon' />
+                    <FaTwitter className='socialIcon' />
                 </div>
                 <div className='hero-heading'>
                     <h1 className='hero-title'>Hey there,</h1>
@@ -28,7 +30,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className='hero-image'>
-                    <img src={profile} alt="Profile pic" className='heroImageProfile' />
+                <img src={profile} alt="Profile pic" className='heroImageProfile' />
             </div>
         </section>
     )

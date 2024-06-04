@@ -7,7 +7,7 @@ const Header = () => {
     const handleMouseMove = useMouseMove()
 
     return (
-        <>
+        <navbar>
             <header className='header'>
                 <div className='title'>
                     <span className='title-text'>
@@ -17,7 +17,7 @@ const Header = () => {
                 <div>
                     <ul className='options'>
                         <li>
-                            <NavLink to='/home'>Home</NavLink>
+                            <NavLink to='/'>Home</NavLink>
                         </li>
                         <li >
                             <NavLink to='/about'>About</NavLink>
@@ -39,7 +39,7 @@ const Header = () => {
                 </div>
             </header>
             <hr class="separator" />
-        </>
+        </navbar>
 
     )
 }

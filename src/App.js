@@ -11,15 +11,17 @@ import Contact from './components/contact/Contact';
 function App() {
   return (
     <BrowserRouter>
+    <main className='container'>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Work />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+    </main>
     </BrowserRouter>
   );
 }
